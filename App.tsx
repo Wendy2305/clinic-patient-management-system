@@ -1,12 +1,12 @@
 import 'reflect-metadata';
 import React from 'react';
 //import ExamplesHome from './src/modules/examples/ExamplesHome';
-import TransactionEntryLanding from './src/modules/transaction-entries/TransactionEntryLanding';
+import TransactionEntryLanding from './src/modules/clinical-records-entries/TransactionEntryLanding';
 import { Icon, Text } from '@rneui/base';
 import useCachedResources from './src/global/hooks/useCachedResources';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
-import AssetEntryLanding from './src/modules/asset-entries/AssetEntryLanding';
+import AssetEntryLanding from './src/modules/biodata-entries/BiodataEntryLanding';
 
 const App: React.FC = () => {
 
@@ -40,9 +40,9 @@ const App: React.FC = () => {
         options={{
           title: 'Transaction Manager',
           tabBarActiveBackgroundColor: 'transparent',
-          tabBarActiveTintColor: 'darkblue',
+          tabBarActiveTintColor: '#800f2f',
           headerShown: false,
-          tabBarLabel: 'Transaction',
+          tabBarLabel: 'Clinical Records',
           tabBarIcon: ({ color, size }) => (
             <Icon
               name="receipt-long"
@@ -58,8 +58,8 @@ const App: React.FC = () => {
         options={{
           title: "Asset Manager",
           headerShown: false,
-          tabBarLabel: 'Asset',
-          tabBarActiveTintColor: 'darkgreen',
+          tabBarLabel: 'Personal-Biodata',
+          tabBarActiveTintColor: '#ea9ab2',
           tabBarIcon: ({ color, size }) => (
             <Icon
               name="inventory"

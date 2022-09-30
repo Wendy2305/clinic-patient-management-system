@@ -1,11 +1,11 @@
 import { useCallback, useState } from 'react';
 import { DataSource } from 'typeorm/browser';
 import { name1655204334428 } from '../../migrations/1655204334428-name';
-import { AssetEntry } from '../../modules/asset-entries/entities/asset-entry.entity';
+import { AssetEntry } from '../../modules/biodata-entries/entities/biodata-entry.entity';
 import { Author } from '../../modules/examples/entities/author.entity';
 import { Category } from '../../modules/examples/entities/category.entity';
 import { Post } from '../../modules/examples/entities/post.entity';
-import { TransactionEntry } from '../../modules/transaction-entries/entities/transaction-entry.entity';
+import { TransactionEntry } from '../../modules/clinical-records-entries/entities/clinical-entry.entity';
 
 const dataSource = new DataSource({
     database: "personal_multi_manager.db",
